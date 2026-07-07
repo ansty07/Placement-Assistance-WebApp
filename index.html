@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AptiQ — Your Placement Companion</title>
+<title>Placement Readiness Assessment</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     /* Purple-pink neon glassmorphic palette — tuned to match the liquid metaball background */
@@ -121,7 +121,7 @@
     width: 220px; height: 220px;
     border-radius: 52% 48% 55% 45% / 45% 55% 48% 52%;
     background: linear-gradient(135deg, rgba(125, 13, 140, 0.9) 0%, rgba(226, 8, 148, 0.9) 100%);
-    box-shadow: inset 0 6px 20px rgba(255, 255, 255, 0.25),
+    box-shadow: inset 0 6px 20px rgba(255, 255, 255, 0.2),
                 inset 0 -6px 20px rgba(0, 0, 0, 0.5),
                 0 0 35px rgba(226, 8, 148, 0.35);
     animation-duration: 15s;
@@ -159,27 +159,19 @@
     max-width:760px;margin:0 auto;padding:64px 24px 80px;
   }
   .brand{
-    font-family:'Fredoka', sans-serif;font-weight:700;font-size:46px;letter-spacing:-0.01em;
-    display:flex;align-items:center;gap:14px;margin-bottom:4px;
-    filter: drop-shadow(0 2px 10px rgba(0, 82, 212, 0.25)) drop-shadow(0 4px 20px rgba(255, 0, 127, 0.25));
-  }
-  .brand-text{
-    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 35%, #d946ef 70%, #ff007f 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    display: inline-block;
+    font-family:var(--font-display);font-weight:600;font-size:32px;letter-spacing:.2px;
+    display:flex;align-items:center;gap:14px;margin-bottom:8px;color:var(--text);
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
   .brand-dot{
     width:12px;height:12px;border-radius:50%;background:var(--lamp);flex-shrink:0;
-    box-shadow:0 0 0 3px rgba(255,77,166,.14), 0 0 20px 4px rgba(255,77,166,.65);
+    box-shadow:0 0 0 3px rgba(224,164,88,.14), 0 0 20px 4px rgba(224,164,88,.65);
     animation: glowPulse 2s infinite alternate;
   }
   
   @keyframes glowPulse {
-    0% { box-shadow: 0 0 0 3px rgba(255,77,166,.14), 0 0 16px 2px rgba(255,77,166,.55); }
-    100% { box-shadow: 0 0 0 6px rgba(255,77,166,.24), 0 0 28px 6px rgba(255,77,166,.85); }
+    0% { box-shadow: 0 0 0 3px rgba(224,164,88,.14), 0 0 16px 2px rgba(224,164,88,.55); }
+    100% { box-shadow: 0 0 0 6px rgba(224,164,88,.24), 0 0 28px 6px rgba(224,164,88,.85); }
   }
 
   .lede{color:var(--text-secondary);margin-bottom:36px;font-size:15.5px;max-width:52ch;line-height:1.6;}
@@ -342,20 +334,7 @@
 
   /* ---------- Pre-assessment screen ---------- */
   #screen-preassess{max-width:640px;margin:0 auto;padding:64px 24px 80px;}
-  .pre-title{
-    font-family:'Fredoka', sans-serif;
-    font-weight:700;
-    font-size:36px;
-    margin-bottom:6px;
-    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 35%, #d946ef 70%, #ff007f 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    display: block;
-    width: fit-content;
-    filter: drop-shadow(0 2px 8px rgba(0, 82, 212, 0.2)) drop-shadow(0 4px 16px rgba(255, 0, 127, 0.2));
-  }
+  .pre-title{font-family:var(--font-display);font-weight:600;font-size:32px;margin-bottom:6px; text-shadow: 0 4px 10px rgba(0,0,0,0.3);}
   .pre-sub{color:var(--text-secondary);font-size:14.5px;margin-bottom:32px;}
   .option-toggle{
     display:flex;align-items:center;justify-content:space-between;gap:20px;
@@ -404,7 +383,7 @@
   .topbar{
     display:flex;align-items:center;justify-content:space-between;
     padding:16px 24px;border-bottom:1px solid var(--border-soft);
-    background:rgba(192,6,111,.85);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    background:rgba(192, 6, 111, 0.85);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
     position:sticky;top:0;z-index:10;
   }
   .topbar-title{font-weight:700;font-family:var(--font-display);font-size:17px; letter-spacing:0.2px;}
@@ -725,8 +704,7 @@
 
 <!-- ============== SETUP SCREEN ============== -->
 <section id="screen-setup" class="screen active">
-  <div class="brand"><span class="brand-dot"></span> <span class="brand-text">AptiQ</span></div>
-  <div style="font-family: 'Space Grotesk', sans-serif; font-size: 13.5px; color: rgba(255, 166, 210, 0.85); margin-bottom: 22px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-shadow: 0 0 10px rgba(255, 77, 166, 0.15);">(your placement companion)</div>
+  <div class="brand"><span class="brand-dot"></span> Placement Readiness Assessment</div>
   <p class="lede">Load a question set to begin. Bring your own JSON — upload a file or paste it directly.</p>
 
   <div id="latestResultCard" class="tilt-card" style="display:none; margin-bottom:24px;"></div>
@@ -1551,7 +1529,6 @@ function renderQuestion(index) {
   renderPalette();
 }
 
-/* ---------------- Answer and confidence logging ---------------- */
 function selectOption(optionText) {
   answers[currentQuestion] = optionText;
   
@@ -2104,7 +2081,7 @@ function downloadReport() {
   <html>
   <head>
     <meta charset="UTF-8">
-    <title>AptiQ Assessment Report - ${escapeHtml(assessmentData.assessment_title)}</title>
+    <title>Placement Readiness Assessment Report - ${escapeHtml(assessmentData.assessment_title)}</title>
     <style>
       body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 40px; }
       .card { background: #1e293b; border-radius: 12px; padding: 32px; max-width: 800px; margin: 0 auto; border: 1px solid #334155; }
