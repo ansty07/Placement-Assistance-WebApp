@@ -710,6 +710,25 @@
 <section id="screen-preassess" class="screen">
   <div class="pre-title" id="preTitle">Assessment</div>
   <div class="pre-sub" id="preSub">0 questions</div>
+  <label class="option-toggle tilt-card" for="toggleCamera">
+    <div>
+      <div class="option-label">📷 Camera preview</div>
+      <div class="option-desc" id="cameraOptionDesc">Shows a live self-view while you work. Nothing is recorded or uploaded — the video never leaves your browser.</div>
+    </div>
+    <div class="switch">
+      <input type="checkbox" id="toggleCamera" onchange="handleCameraToggle(this)">
+      <span class="slider"></span>
+    </div>
+  </label>
+  <div id="cameraWarning" class="camera-warning"></div>
+
+  <div class="camera-preview-wrapper" id="cameraWrapper">
+    <div class="camera-video-container tilt-card">
+      <video id="cameraVideo" autoplay muted playsinline></video>
+      <div class="camera-badge"><div class="camera-dot"></div> Camera on</div>
+    </div>
+  </div>
+  
   <label class="option-toggle tilt-card" for="toggleFullscreen">
     <div>
       <div class="option-label">⛶ Fullscreen mode</div>
