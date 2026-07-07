@@ -343,7 +343,32 @@
   .slider{position:absolute;inset:0;background:var(--border);border-radius:24px;transition:.2s;}
   .slider:before{content:"";position:absolute;width:18px;height:18px;left:3px;top:3px;background:#fff;border-radius:50%;transition:.2s;box-shadow:0 2px 4px rgba(0,0,0,.4);}
   input:checked + .slider{background:linear-gradient(90deg, var(--blue-deep), var(--lamp));}
-  input:checked + .slider:before{transform:translateX(20px);}
+  input:checked + .slider:before{transform:translateX(20px);
+  }
+  
+  .camera-warning{
+    display:none;align-items:flex-start;gap:10px;font-size:13px;line-height:1.6;
+    color:var(--yellow);background:rgba(226,185,59,.07);border:1px solid rgba(226,185,59,.3);
+    border-radius:var(--radius-sm);padding:13px 16px;margin:-6px 0 14px;
+    transition: all 0.3s ease;
+  }
+  .camera-warning.visible{display:flex; animation: slideDown 0.3s ease;}
+  .camera-warning.is-error{color:var(--red);background:rgba(242,97,122,.07);border-color:rgba(242,97,122,.3);}
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .camera-preview-wrapper{display:none;margin-bottom:14px;}
+  .camera-preview-wrapper.visible{display:block; animation: fadeIn 0.4s ease;}
+  .camera-video-container{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border-soft);background:#000;box-shadow:var(--shadow-soft);}
+  .camera-video-container video{width:100%;display:block;max-height:240px;object-fit:cover;}
+  .camera-badge{position:absolute;top:12px;left:12px;background:rgba(0,0,0,.6);color:#fff;font-size:11.5px;
+    padding:5px 10px;border-radius:20px;display:flex;align-items:center;gap:6px;backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.06);}
+  .camera-dot{width:8px;height:8px;border-radius:50%;background:var(--red);animation:pulse 1.4s infinite;}
+  @keyframes pulse{0%,100%{opacity:1; transform:scale(1);}50%{opacity:.35; transform:scale(0.85);}}
+  .mic-row{display:flex;align-items:center;gap:10px;padding:12px 6px 0;}
+  
   #screen-assessment{display:none;}
   #screen-assessment.active-flex{display:flex;}
   .topbar{
