@@ -2,6 +2,7 @@
 
 The **Placement Assistance WebApp** is a web-based platform designed to help students prepare for campus placements in a simple and organized way. It provides practice tests, coding questions, technical MCQs, and mock assessments to improve problem-solving skills and interview readiness.
 
+
 ## 📌 Features
 
 * User Registration and Login
@@ -12,6 +13,7 @@ The **Placement Assistance WebApp** is a web-based platform designed to help stu
 * Timed Mock Tests
 * Performance and Score Analysis
 * Responsive and User-Friendly Interface
+
 
 ## 🎯 Objective
 
