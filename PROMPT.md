@@ -1,4 +1,4 @@
-# 📋 PROMPT THAT YOU SHOULD GIVE TO ANY LLM TO GET THE DESIRED JSON FILE
+# 📋 PROMPT TO GIVE ANY LLM TO GET THE DESIRED JSON FILE 
 
 > Copy everything **below the horizontal line** and paste it as-is into any LLM (ChatGPT, Claude, Gemini, etc.) to generate a placement aptitude assessment JSON file.
 
