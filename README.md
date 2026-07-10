@@ -6,8 +6,9 @@
 
 ## 📸 Home Page
 
-<!-- Add a screenshot of the setup screen here, e.g.: -->
-<!-- ![AptiQ Home Screen](./screenshots/home.png) -->
+<img width="1897" height="867" alt="image" src="https://github.com/user-attachments/assets/dadccece-206d-41d3-96c2-d12c828d1c4c" />
+
+
 
 *(Screenshot of the "Upload file / Paste JSON" setup screen goes here.)*
 
