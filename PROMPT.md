@@ -1,4 +1,8 @@
-# Prompt for JSON FILE Generation -
+# 📋 PROMPT THAT YOU SHOULD GIVE TO ANY LLM TO GET THE DESIRED JSON FILE
+
+> Copy everything **below the horizontal line** and paste it as-is into any LLM (ChatGPT, Claude, Gemini, etc.) to generate a placement aptitude assessment JSON file.
+
+---
 
 ## ROLE
 Act as an expert Placement Assessment Designer, Aptitude Test Architect, Psychometric Test Creator, Educational Assessment Specialist, Recruitment Assessment Analyst, and JSON Generator.
