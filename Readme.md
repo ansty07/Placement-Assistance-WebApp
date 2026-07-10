@@ -93,6 +93,4 @@ Want a question set tailored to a specific company, question type, question coun
 
 AptiQ is a practice tool for self-assessment and placement preparation. Scores and readiness labels are generated locally from your own question set and are not affiliated with or endorsed by any hiring company.
 
----
 
-*Created by Anshuman Mohanty & Tridev Ashirbad Dash*
