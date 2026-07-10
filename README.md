@@ -1,4 +1,4 @@
-# AptiQ
+# 🎯 AptiQ
 
 **Your placement companion** — a self-contained, single-file web app for running mock aptitude and placement assessments from any JSON question set.
 
@@ -9,23 +9,23 @@
 
 *(Screenshot of the "Upload file / Paste JSON" setup screen goes here.)*
 
-## Overview
+## 🧭 Overview
 
 AptiQ is a browser-based assessment platform built as a single `index.html` file with no backend or build step required. You bring your own question set as JSON (upload a file or paste it directly), and AptiQ turns it into a full timed, proctored, exam-style test experience — complete with a detailed performance dashboard at the end.
 
-## Key Features
+## ✨ Key Features
 
-### Flexible Question Loading
+### 📂 Flexible Question Loading
 - Upload a `.json` file via drag-and-drop or file picker
 - Paste JSON directly into a text area
 - Built-in sample question set to preview the expected format
 - Validates structure and previews the assessment (title, question count, categories, duration) before loading
 
-### Pre-Assessment Options
+### ⚙️ Pre-Assessment Options
 - ⛶ **Fullscreen mode** — expands the test to fill the screen (exit anytime with Esc)
 - 📷 **Camera & mic proctoring** — optional webcam/mic verification with a live preview and "Secure Mode" indicator during the test
 
-### Exam Experience
+### 📝 Exam Experience
 - Countdown timer with warning and danger states as time runs low
 - Auto-submit when time expires
 - Question palette showing answered, flagged, and current questions at a glance
@@ -34,7 +34,7 @@ AptiQ is a browser-based assessment platform built as a single `index.html` file
 - Keyboard shortcuts (arrow keys to navigate, `F` to flag, `1`/`2`/`3` for confidence)
 - Submit confirmation modal showing answered/unanswered/flagged counts
 
-### Results Dashboard
+### 📊 Results Dashboard
 - Overall score with an animated readiness ring and readiness badge (Excellent / Good / Needs Improvement)
 - Category-by-category accuracy breakdown
 - Performance split by difficulty (Easy / Medium / Hard)
@@ -46,7 +46,7 @@ AptiQ is a browser-based assessment platform built as a single `index.html` file
 - Download results as JSON or as a printable HTML report
 - Remembers your most recent attempt and shows it on the home screen
 
-## Question JSON Format
+## 🧩 Question JSON Format
 
 ```json
 {
@@ -68,8 +68,7 @@ AptiQ is a browser-based assessment platform built as a single `index.html` file
 
 Only a `questions` array is required — AptiQ falls back to sensible defaults for the rest.
 
-
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **HTML5 / CSS3** — single-file layout with custom properties, glassmorphism panels, and 3D tilt-on-hover cards
 - **Vanilla JavaScript** — no frameworks or dependencies
@@ -78,7 +77,7 @@ Only a `questions` array is required — AptiQ falls back to sensible defaults f
 - **Fullscreen API** — for distraction-free test mode
 - **localStorage** — persists the most recent result between sessions
 
-## Getting Started
+## 🚀 Getting Started
 
 1. Open `index.html` in any modern browser — no installation or server needed
 2. Upload a `.json` question set, paste one in, or load the sample
@@ -87,7 +86,7 @@ Only a `questions` array is required — AptiQ falls back to sensible defaults f
 5. Answer questions, rate your confidence, flag anything to revisit
 6. Submit to view your full results dashboard
 
-## Disclaimer
+## ⚠️ Disclaimer
 
 AptiQ is a practice tool for self-assessment and placement preparation. Scores and readiness labels are generated locally from your own question set and are not affiliated with or endorsed by any hiring company.
 
