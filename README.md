@@ -10,7 +10,6 @@
 
 
 
-*(Screenshot of the "Upload file / Paste JSON" setup screen goes here.)*
 
 ## 🧭 Overview
 
