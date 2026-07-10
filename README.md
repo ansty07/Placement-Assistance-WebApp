@@ -2,6 +2,8 @@
 
 **Your placement companion** — a self-contained, single-file web app for running mock aptitude and placement assessments from any JSON question set.
 
+🔗 **Live Demo:** [aptiq-placementassistance-webapp.vercel.app](https://aptiq-placementassistance-webapp.vercel.app/)
+
 ## 📸 Home Page
 
 <!-- Add a screenshot of the setup screen here, e.g.: -->
