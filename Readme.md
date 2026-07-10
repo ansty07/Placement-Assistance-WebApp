@@ -66,7 +66,6 @@ AptiQ is a browser-based assessment platform built as a single `index.html` file
 }
 ```
 
-Only a `questions` array is required — AptiQ falls back to sensible defaults for the rest.
 
 ## 🤖 Generate Your Own Question Set
 
